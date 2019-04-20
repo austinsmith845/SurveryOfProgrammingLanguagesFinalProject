@@ -5,8 +5,6 @@
 require 'httparty'  # httparty includes the JSON library
 require 'yaml'
 
-
-
 json_info = []
 
 def synonym(word)
@@ -96,3 +94,5 @@ end
 File.open(input_file, "w") do |f|
     f.write($synonym_data)
 end
+
+puts "\nThe words in the file have been replaced with synonyms!\n\n"
